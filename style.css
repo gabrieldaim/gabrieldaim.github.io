@@ -1,0 +1,124 @@
+.navbar{
+    margin-bottom: 20px;
+}
+
+body{
+    background-image: url('images/fundo-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+#nome{
+    margin-right: 10px;
+}
+#nome2{
+    padding: 0 5px 0 5px;
+}
+
+.navbar-item.center{
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+a{
+    margin: 0 auto 0 auto;
+}
+#menu{
+    color: white;
+
+    margin: 0 10px 0 10px;
+}
+#menu:hover{
+    color: #18f9b2;
+    border-bottom: solid 1px #18f9b2;
+
+}
+
+#menu:active{
+    font-weight: bold;
+
+}
+
+#titulo{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 4vw;
+}
+
+#menu-contato{
+    color: white;
+    margin: 0 10px 0 10px;
+    background: transparent;
+    border: 1px solid #18f9b2;
+
+}
+
+#menu-contato:hover{
+    color: white;
+    margin: 0 10px 0 10px;
+    background-color: #18f9b2;
+    border: 1px solid #18f9b2;
+}
+
+#card{
+    margin: auto;
+    width: 50vw;
+}
+
+.columns{
+    margin: auto;
+}
+
+#card-1{
+    margin:auto;
+
+}
+
+
+h1{
+    color: #18f9b2;
+    width: 20%;
+    margin: 50px auto 50px auto;
+    font-size: 3vh;
+    border-bottom: 1px solid #18f9b2;
+
+}
+
+.container{
+    text-align: center;
+}
+
+.title{
+    color: white;
+    font-size: 10vh;
+}
+
+p{
+    margin: auto;
+    width: 70%;
+    color: white;
+    font-size: large;
+    text-align: justify;
+
+}
+
+h2{
+    color: #18f9b2;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
