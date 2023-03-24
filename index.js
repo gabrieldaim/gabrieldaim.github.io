@@ -7,6 +7,7 @@ const translations = {
       item3: "Item 3"
     },
     pt: {
+        language: "Mudar o site para inglês",
         titulo_sobre: "Sobre mim",
         titulo2_sobre: "Pós-graduando em Eng. de Software",
         texto_sobre: "Me chamo Gabriel Daim, sou formado em Engenharia da Computação e atualmente estou cursando minha pós-graduação em Engenharia de Software pela PUC-RIO.Além disso, atuo como <span class='verde'>Solution engineer na TV Globo.</span>",
@@ -31,12 +32,28 @@ const translations = {
         titulo_udemy: "Cursos da Udemy com certificação",
         linha1_udemy: "Desenvolvimento Android nativo", 
         linha2_udemy: "Desenvolvimento híbrido com Flutter",
-    }
+        titulo_experiencia: "Experiência profissional",
+        globo_name: "TV Globo",
+        cargo1: "Cargo: Analista de Soluções de Midias I",
+        inicio1: "Inicio: 08/2021",
+        fim1: "Até o atual momento",
+        detalhes_job1: "Na Squad de FileBased & MediaSecurity, somos responsáveis por dar suporte, manutenção e melhorias em vários sistemas core da empresa. Utilizamos tecnologias de ponta, como Docker, Zabbix, Grafana, AWS, Azure, entre outras. <br><br>Agora, efetivado, novas responsabilidades surgiram, como a liderança de projetos maiores, o compartilhamento de conhecimento com outros colegas e o papel de ser uma ponte importante de comunicação entre nossa área e outras equipes da empresa.",
+        cargo2: "Cargo: Estagiário",
+        inicio2: "Inicio: 01/2020",
+        fim2: "Término: 08/2021",
+        detalhes_job2:"Durante o meu estágio, tive a oportunidade de aprender e vivenciar a rotina de excelentes profissionais, além de implementar melhorias significativas no setor, incluindo uma documentação mais eficiente e a automação de tarefas repetitivas, usando Bash e Python.",
+        inicio3: "Inicio: 04/2019",
+        fim3: "Término: 09/2019",
+        detalhes_job3:"Na empresa, meu trabalho consistia em realizar melhorias e consultas na base de dados, implementar novas funcionalidades no site e realizar a manutenção do sistema.",
+        alergolife: "Alergolife",  
+        titulo_skill: "Hardskills",    
+      }
   };
 
   let currentLanguage = "pt";
 
       function changeLanguage() {
+        console.log('oi')
         if (currentLanguage === "en") {
           currentLanguage = "pt";
         } else {
@@ -54,10 +71,15 @@ const translations = {
           element.innerHTML = translations[currentLanguage][translationKey];
         });
       }
+      let language = document.querySelector('.language')
+      language.addEventListener('click', ()=>{
+        changeLanguage();
+      })
+
 
       // Inicialmente, atualiza as traduções
       updateTranslations();
-
+      
 function digitandoHead(){
     const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
