@@ -236,3 +236,39 @@ max-width: 530px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.conteudo-hardskill{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 150px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover{
+    outline: 1px solid #35CCC4;
+    transform: scale(1.05);
+}
+
+.skill>img{
+    width: 100px;
+}
+
+@media (max-width:880px) {
+    .conteudo-hardskill{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px
+    }
+}
