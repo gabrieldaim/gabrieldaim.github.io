@@ -239,8 +239,9 @@ max-width: 530px;
 
 .conteudo-hardskill{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
 }
 
 .skill{
@@ -251,24 +252,199 @@ max-width: 530px;
     gap: 10px;
     border-radius: 10px;
     min-width: 150px;
-    max-width: 150px;
+    text-align: center;
     padding: 10px;
     transition: 0.3s;
 }
 
 .skill:hover{
-    outline: 1px solid #35CCC4;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .skill>img{
     width: 100px;
+
+}
+
+
+
+.conteudo-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:120px;
+}
+
+.projeto{
+    display: flex;
+    gap:110px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.projeto>div{
+    width: 40vw;
+    max-width: 500px;
+}
+
+.projeto>img{
+    width: 25px;
+    max-width: 500px;
+    position: absolute;
+    top: 125px;
+    margin: 0 55px 0 55px;
+}
+
+.secao-projeto>img{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.secao-projeto>img:hover{
+    border-radius: 10px;
+    outline: 2px solid #35ccc4;
+}
+
+.botoes-projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:35px;
+    margin-top: 15px;
+}
+
+.botoes-projeto>button{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 5px 40px;
+    background-color: #35ccc4;
+    border-radius: 10px;
+    min-width: 170px;
+}
+
+
+.botoes-projeto>button>img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.invertido{
+    flex-direction: row-reverse;
+}
+
+.invertido > .secao-detalhes{
+    text-align: end;
+}
+
+.pequeno{
+    font-size: 20px;
+}
+
+.final-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 @media (max-width:880px) {
+
+    .sobre{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .conteudo-sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centro{
+        text-align: center;
+    }
+    .curso{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .curso>img{
+        width: 100px;
+        height: 100px;
+    }
     .conteudo-hardskill{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px
     }
+
+    .projeto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: 10px;
+    }
+
+    .projeto>img{
+        display: none;
+    }
+
+    .conteudo-projetos{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .secao-projeto{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .secao-projeto>img{
+        width: 80vw;
+    }
+
+    .botoes-projeto{
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .botoes-projeto>button{
+        min-width: 180px;
+    }
+
+    .secao-detalhes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secao-detalhes> .texto{
+        width: 80vw;
+    }
+    .invertido > .secao-detalhes{
+        text-align: center;
+    }
+
 }
