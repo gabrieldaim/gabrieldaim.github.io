@@ -177,6 +177,7 @@ body {
 .btn-cv:hover{
     background-color: #35ccc4;
     color: white;
+    text-decoration: none;
 }
 
 .historico{
